@@ -46,4 +46,4 @@ Now you are ready to use the commands to add and remove roles in both servers.
     - will add the role with role name to the user and remove the role after 10 days.
     * Note - if the user already has an expiration date in the future, this will extend that date by 10 days
 
-
+The bot will check for users that have expired every 8 hours by default.
