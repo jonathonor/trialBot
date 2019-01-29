@@ -1,0 +1,23 @@
+{
+  "name": "expirebot",
+  "version": "1.0.0",
+  "description": "A bot to expire a discord users role after a set amount of days.",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathonor/expireBot.git"
+  },
+  "author": "jonathon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonathonor/expireBot/issues"
+  },
+  "homepage": "https://github.com/jonathonor/expireBot#readme",
+  "dependencies": {
+    "node-schedule": "^1.3.1",
+    "promise-mysql": "^3.3.1"
+  }
+}
