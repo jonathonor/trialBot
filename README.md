@@ -14,11 +14,11 @@ Prerequisites -
 2. Copy and paste the code below into the command line after you have logged into MySQL
 3. You can change the username/password here to whatever you want, just make sure it matches what is in config.json
 
-CREATE DATABASE expireBotData;
-CREATE USER 'expireDataUser'@'localhost' IDENTIFIED BY 'expireDataPassword';
-GRANT ALL PRIVILEGES ON expireBotData . * TO 'expireDataUser'@'localhost';
-USE expireBotData;
-CREATE TABLE users (id varchar(18), role varchar(18), expires datetime);
+CREATE DATABASE expireBotData;<br>
+CREATE USER 'expireDataUser'@'localhost' IDENTIFIED BY 'expireDataPassword';<br>
+GRANT ALL PRIVILEGES ON expireBotData . * TO 'expireDataUser'@'localhost';<br>
+USE expireBotData;<br>
+CREATE TABLE users (id varchar(18), role varchar(18), expires datetime);<br>
 exit
 
 After the database has been created, you are ready to create and configure your bot.
