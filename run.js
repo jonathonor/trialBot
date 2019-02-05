@@ -21,7 +21,7 @@ var connection;
 client.on('ready', () => {
   console.log('expireBot started.');
     mysql.createConnection({
-        host: 'localhost',
+        host: config.dbHost,
         user: config.dbUsername,
         password: config.dbPassword
     }).then(conn => {

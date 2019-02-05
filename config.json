@@ -4,6 +4,7 @@
     "dbUsername": "expireDataUser",
     "dbPassword": "expireDataPassword",
     "dbName": "expireBotData",
+    "dbHost": "0.0.0.0",
     "commanderRole": "ROLE NAME TO USE !role command",
     "logChannelId": "LOG CHANNEL ID"
 }
