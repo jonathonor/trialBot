@@ -7,7 +7,7 @@ Clone this repo to wherever you want the bot to run.
     - git clone https://github.com/jonathonor/expireBot.git
     - cd expireBot
     - npm install
-    - node run.js
+    - node expirebot.js
 
 Prerequisites -
 1. Open “MySQL Client”
