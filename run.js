@@ -10,7 +10,7 @@ const client = new Discord.Client();
 var config = require('./config.json');
 var pool = mysql.createPool({
     connectionLimit : 100, //important
-    host     : 'localhost',
+    host     : config.dbHost,
     user     : config.dbUsername,
     password : config.dbPassword,
     database : config.dbName,
