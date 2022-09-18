@@ -1,7 +1,7 @@
 {
-  "name": "expirebot",
+  "name": "trialbot",
   "version": "1.0.0",
-  "description": "A bot to expire a discord users role after a set amount of days.",
+  "description": "A bot to grant discord users temporary access to roles.",
   "main": "run.js",
   "type": "module",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonathonor/expireBot.git"
+    "url": "git+https://github.com/jonathonor/trialbot.git"
   },
   "author": "jonathon",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jonathonor/expireBot/issues"
+    "url": "https://github.com/jonathonor/trialbot/issues"
   },
-  "homepage": "https://github.com/jonathonor/expireBot#readme",
+  "homepage": "https://github.com/jonathonor/trialbot#readme",
   "dependencies": {
     "@discordjs/rest": "^1.1.0",
     "discord-api-types": "^0.37.10",
