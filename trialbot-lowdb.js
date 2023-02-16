@@ -215,6 +215,6 @@ client.login(config.token);
 
 process.on('SIGINT', function () { 
     console.log('shutting down schedulers');
-        schedule.gracefulShutdown()
+    schedule.gracefulShutdown()
     .then(() => process.exit(0))
 });
