@@ -70,6 +70,7 @@ client.on('interactionCreate', async interaction => {
 
         addRole(interaction.guild, member, role, amount, type).then(() => {
             interaction.reply({ content: `Added ${role.name} to ${member.user.username} for ${amount} ${type}.`, ephemeral: true });
+            member.user.send('You have been granted the **' +role.name+ '** role for '+amount+' '+ type +'(s).');
         }).catch(e => {
             interaction.reply({ content: `Unable to add role to ${member.user.username} for ${amount} ${type}. See console for error.`, ephemeral: true });
             console.log(e);
@@ -140,6 +141,7 @@ let removeRoles = async () => {
                 for (const dbEntry of expiredRoles) {
                     const role = await guild.roles.fetch(dbEntry.roleId);
                     const member = await guild.members.fetch(dbEntry.id);
+                    member.user.send('Uh oh, sorry '+ member.user.username +' it looks like your time period for the role: **' +role.name+ '** has expired.');
                     try {
                         await member.roles.remove(role);
                         const exisingLog = data.removedRolesFrom.find(l => l.userName === member.user.username);
